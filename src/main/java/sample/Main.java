@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
-public class Mainapp extends Application {
+public class Main extends Application {
 
 
     @Override
@@ -18,7 +18,7 @@ public class Mainapp extends Application {
         Parent fxmlMain = FXMLLoader.load(getClass().getResource("/fxml/Login.fxml"));
         Scene mainScene = new Scene(fxmlMain);
         primaryStage.setScene(mainScene);
-        primaryStage.setTitle("20 Dice");
+        primaryStage.setTitle("Transportadora Samambaia");
         primaryStage.setResizable(false);
         primaryStage.show();
 

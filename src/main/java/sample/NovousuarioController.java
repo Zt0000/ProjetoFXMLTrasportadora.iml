@@ -8,11 +8,12 @@ import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
+import java.awt.*;
 import java.io.IOException;
 
-public class CriacaofichaController {
+public class NovousuarioController {
 
-    public void btcancelarficha(ActionEvent event) throws IOException {
+    public void btcancelarcadastro(ActionEvent event) throws IOException {
         ((Node)(event.getSource())).getScene().getWindow().hide();
 
     }

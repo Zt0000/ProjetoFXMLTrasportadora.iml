@@ -1,7 +1,6 @@
 package sample;
 
 import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -11,13 +10,13 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class TelaprincipalController {
+public class PrincipalController {
     public void btnewficha(ActionEvent event) throws IOException {
 
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Criacaoficha.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Novoproduto.fxml"));
         stage.setScene(new Scene(root));
-        stage.setTitle("20 Dice");
+        stage.setTitle("Transportadora Samambaia");
         stage.initModality(Modality.WINDOW_MODAL);
         stage.initOwner(((Node)event.getSource()).getScene().getWindow() );
         stage.show();

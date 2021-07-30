@@ -15,9 +15,9 @@ public class LoginController {
     public void btLogin(ActionEvent event) throws IOException {
 
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Telaprincipal.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Principal.fxml"));
         stage.setScene(new Scene(root));
-        stage.setTitle("20 Dice");
+        stage.setTitle("Transportadora Samambaia");
         stage.initModality(Modality.WINDOW_MODAL);
         stage.initOwner(((Node)event.getSource()).getScene().getWindow() );
         stage.show();
@@ -27,12 +27,16 @@ public class LoginController {
     public void btCriar(ActionEvent event) throws IOException {
 
         Stage stage = new Stage();
-        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Cadastrousuario.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/Novousuario.fxml"));
         stage.setScene(new Scene(root));
-        stage.setTitle("My modal window");
+        stage.setTitle("Transportadora Samambaia");
         stage.initModality(Modality.WINDOW_MODAL);
         stage.initOwner(((Node)event.getSource()).getScene().getWindow() );
         stage.show();
+
+    }
+    public void btsair(ActionEvent event) throws IOException {
+        ((Node)(event.getSource())).getScene().getWindow().hide();
 
     }
 
